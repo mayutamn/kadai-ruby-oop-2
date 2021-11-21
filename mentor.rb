@@ -1,7 +1,7 @@
 class Mentor
     attr_accessor :name
-    def initialize(name)
-        self.name = name
+    def initialize(name1)
+        self.name = name1
     end
     def job
         puts "#{self.name}です。私は現役のITプロフェッショナルです。"
@@ -9,9 +9,6 @@ class Mentor
 end
 
 class RailsMentor < Mentor
-    def initialize(name)#この2行無くてもできるけど必要？
-        super
-    end
     def job
         puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
